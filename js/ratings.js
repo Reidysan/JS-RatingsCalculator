@@ -1,3 +1,5 @@
+const { doc } = require("mocha/lib/reporters");
+
 const collect_ratings = () => {
        const ratings = {
          'count': 0,
