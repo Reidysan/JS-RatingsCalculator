@@ -20,8 +20,7 @@ function collect_ratings  () {
             ratings.average = ratings.sum/ratings.count;
         }
         return ratings;
-};
-
+}
 document.addEventListener('change', () => { 
     const ratings = collect_ratings();
     document.querySelectorAll('#average').value = ratings.average.toFixed(2);
